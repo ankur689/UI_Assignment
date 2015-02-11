@@ -1,0 +1,50 @@
+<style>
+.table-borderless td,
+.table-borderless th {
+    border: 0;
+    border-top: none;
+}
+
+.text_center {text-align: center}
+
+.col-center{
+  margin:0 auto;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+body { background: #FCF5CF; }
+
+#dialogoverlay{
+    display: none;
+    opacity: .4;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: #FFF;
+    width: 100%;
+    z-index: 10;
+}
+#dialogbox{
+    display: none;
+    position: fixed;
+    background: #000;
+    border-radius:7px; 
+    width:550px;
+    z-index: 10;
+}
+#dialogbox > div{ background:#FFF; margin:5px; }
+#dialogbox > div > #dialogboxhead{ background: #FFCC66; font-size:19px; padding:10px; color:#0000FF; }
+#dialogbox > div > #dialogboxbody{ background:#333; padding:20px; color:#FFF; }
+#dialogbox > div > #dialogboxfoot{ background: #FFCC66; padding:10px; text-align:right; }
+
+#target, #src > img {border: thin solid black; padding: 2px; margin:4px;}
+#target {height: 50px; width: 50px; text-align: center; display: table;}
+#target > p {display: table-cell; vertical-align: middle;}
+#target > img {margin: 1px;}
+img.dragged {background-color: blue;}
+
+</style>
